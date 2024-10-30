@@ -1,4 +1,4 @@
-name: Check Site Uptime
+name: Check Site
 
 on:
   schedule:

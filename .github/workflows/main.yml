@@ -1,4 +1,4 @@
-name: Build and Deploy Main Branch
+name: Build and Deploy
 
 on:
   push:
@@ -17,8 +17,7 @@ jobs:
         with:
           directory: .
           connect_timeout: 20
-          max_concurrency: 3
+          max_concurrency: 1
           timeout: 20
           retries: 1
           check_opengraph: false
-          check_external_hash: false

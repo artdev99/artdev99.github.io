@@ -22,3 +22,7 @@ jobs:
           timeout: 20
           retries: 1
           check_opengraph: false
+          ignore_url_re: |
+            ^https://fonts.googleapis.com
+            ^https://fonts.gstatic.com
+

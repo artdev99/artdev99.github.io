@@ -2,8 +2,7 @@ name: Check Site
 
 on:
   schedule:
-    #- cron: '0 0 * * *'  # Once per day at 00:00 UTC
-    - cron: '13 * * * *'
+    - cron: '0 8 * * *'  # Once per day at 08:00 UTC
   workflow_dispatch:
 
 jobs:

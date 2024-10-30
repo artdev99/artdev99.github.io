@@ -1,0 +1,24 @@
+name: Build and Deploy Main Branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      
+      - name: Validate HTML and CSS
+        uses: anishathalye/proof-html@v2
+        with:
+          directory: .
+          connect_timeout: 20
+          max_concurrency: 3
+          timeout: 20
+          retries: 1
+          check_opengraph: false
+          check_external_hash: false

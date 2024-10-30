@@ -3,6 +3,7 @@ name: Check Site
 on:
   schedule:
     - cron: '0 0 * * *'  # Once per day at 00:00 UTC
+  workflow_dispatch:
 
 jobs:
   uptime:

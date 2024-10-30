@@ -4,16 +4,17 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       
       - name: Validate HTML and CSS
-        uses: anishathalye/proof-html@v2
+        uses: anishathalye/proof-html@v2 # https://github.com/marketplace/actions/proof-html
         with:
           directory: .
           connect_timeout: 20

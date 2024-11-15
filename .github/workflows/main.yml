@@ -25,4 +25,3 @@ jobs:
           ignore_url_re: |
             ^https://fonts.googleapis.com
             ^https://fonts.gstatic.com
-            ^.*test\.html$
